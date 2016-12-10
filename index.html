@@ -1,0 +1,38 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+  <head>
+    <script>
+      var div = document.getElementById('text');
+        div.onmouseover = function() {
+		      var hex = Math.floor( Math.random() * 0xFFFFFF );
+		      var res = document.getElementById('text');
+		      var result = "#" + hex.toString(16);
+
+		      res.style.backgroundColor = result;
+		      res.innerHTML = result;
+    };
+    </script>
+    <style>
+      #text{
+        width: 1000px;
+        height: 500px;
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Quicksand';
+    }
+
+      body{
+        text-align: center;
+        font-family: 'Quicksand';
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+     </style>
+  </head>
+  <body>
+    <h1>Hover over me to get a random color!</h1>
+    <div id="text">Hex code</div>
+  </body>
+</html>
