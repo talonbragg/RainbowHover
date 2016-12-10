@@ -1,19 +1,6 @@
 <html>
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
   <head>
-    <script type="text/javascript">
-    var div = document.getElementById('text'),
-		randomColor = function(e) {
-      var hex = Math.floor( Math.random() * 0xFFFFFF ),
-          res = e.target,
-          result = "#" + hex.toString(16);
-
-      res.style.backgroundColor = result;
-      res.innerHTML = result;
-  	};
-div.addEventListener('mouseover', randomColor);
-
-    </script>
     <style>
       #text{
         width: 1000px;
@@ -36,5 +23,18 @@ div.addEventListener('mouseover', randomColor);
   <body>
     <h1>Hover over me to get a random color!</h1>
     <div id="text">Hex code</div>
+     <script type="text/javascript">
+    var div = document.getElementById('text'),
+		randomColor = function(e) {
+      var hex = Math.floor( Math.random() * 0xFFFFFF ),
+          res = e.target,
+          result = "#" + hex.toString(16);
+
+      res.style.backgroundColor = result;
+      res.innerHTML = result;
+  	};
+div.addEventListener('mouseover', randomColor);
+
+    </script>
   </body>
 </html>
