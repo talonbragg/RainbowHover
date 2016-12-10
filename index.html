@@ -258,6 +258,9 @@
       copyColor = function(e) {
         var copyTextDiv = e.target;
         selectText(copyTextDiv);
+        var t2 = document.getElementById('text2');
+        var textArray = ['nice!', 'cool!', 'awesome!', 'great!', 'Amazing'];
+        t2.innerHTML = Math.random(textArray);
 
         try {
           var copied = document.execCommand('copy');
