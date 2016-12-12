@@ -30,21 +30,17 @@
   <h3>Click on the Hex code to copy it.</h3>
   <div id="text">🌈</div>
   <h2>Color Select</h2>
-  <div id="red">red</div>
-  <span id="blue">blue</span>
-  <span id="purple">purple</span>
-  <span id="green">green</span>
-  <span id="yellow">yellow</span>
-  <span id="orange">orange</span>
-  <p id="pchange">You can select the buttons to change the color of the text</p>
+  <p id="pchange" style="text-align:center;font-size:17px;">The hove item changes the color of this text to!</p>
   <script type="text/javascript">
     var div = document.getElementById('text'),
       randomColor = function(e) {
         var hex = Math.floor(Math.random() * 0xFFFFFF),
           res = e.target,
           result = "#" + hex.toString(16);
+        var pChange = document.getElementById('pchange');
         res.style.backgroundColor = result;
         res.innerHTML = result;
+        pChange.style.color = result;
       },
       selectText = function (element) {
         var range, selection;    
@@ -71,23 +67,10 @@
           console.log('Unable to copy on this browser.');
         }            
       };
-    var red = document.getElementById('red');
-    var blue = document.getElementById('blue');
-    var purple = document.getElementById('purple');
-    var green = document.getElementById('green');
-    var yellow = document.getElementById('yellow');
-    var orange = document.getElementById('orange');
-    var pChange = document.getElementById('pchange');
     window.onblur = function () { document.title = 'you left?'; }
     window.onfocus = function () { document.title = 'you came back! YAY!'; }
     div.addEventListener('mouseover', randomColor);
     div.addEventListener('click', copyColor);
-    red.addEventListener('click', pChange.style.color = "red");
-    blue.addEventListener('click', pChange.style.color = "blue");
-    purple.addEventListener('click', pChange.style.color = "purple");
-    green.addEventListener('click', pChange.style.color = "green");
-    yellow.addEventListener('click', pChange.style.color = "yellow");
-    orange.addEventListener('click', pChange.style.color = "orange");
   </script>
 </body>
 </html>
