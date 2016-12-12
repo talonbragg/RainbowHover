@@ -1,6 +1,6 @@
 <html>
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
-
+  <title>Rainbowhover | TB</title>
 <head>
   <style>
     #text {
@@ -265,6 +265,8 @@
           console.log('Unable to copy on this browser.');
         }            
       };
+    window.onblur = function () { document.title = 'you left?'; }
+    window.onfocus = function () { document.title = 'you came back! YAY!'; }
     div.addEventListener('mouseover', randomColor);
     div.addEventListener('click', copyColor);
   </script>
