@@ -31,6 +31,9 @@
   <div id="text">🌈</div>
   <h2>Color Select</h2>
   <p id="pchange" style="text-align:center;font-size:25px;"><strong>The magical rainbowhover box changes the color of this text too!</strong></p>
+  <h2>Heart Growth</h2>
+  <h3 style="text-align:center;font-size:25px;">Click the heart to show your love for this site!</h3>
+  <p id="heart">❤️</p>
   <script type="text/javascript">
     var div = document.getElementById('text'),
       randomColor = function(e) {
@@ -67,6 +70,10 @@
           console.log('Unable to copy on this browser.');
         }            
       };
+    function changeHeart() {
+      var heart = document.getElementById('heart');
+      heart.style.width  = 
+    }
     window.onblur = function () { document.title = 'you left?'; }
     window.onfocus = function () { document.title = 'you came back! YAY!'; }
     div.addEventListener('mouseover', randomColor);
