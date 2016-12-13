@@ -70,14 +70,21 @@
           console.log('Unable to copy on this browser.');
         }            
       };
-    function changeHeart() {
-      var heart = document.getElementById('heart');
-      heart.style.width  = 
+    var heart = document.getElementById('heart');
+    function changeHeart(e) {
+      var styles = window.getComputedStyle(heart); 
+      var heartW = parseInt(styles.width);
+      var heartH = parseInt(styles.height);
+      var newHeight = heartH + 10;
+      var newWidth = heartW + 10;
+      heart.style.width = newHeight + 'px';
+      heart.style.height = newHeight + 'px';
     }
     window.onblur = function () { document.title = 'you left?'; }
     window.onfocus = function () { document.title = 'you came back! YAY!'; }
     div.addEventListener('mouseover', randomColor);
     div.addEventListener('click', copyColor);
+    heart.addEventListener('click', changeHeart);
   </script>
 </body>
 </html>
