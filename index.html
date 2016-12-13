@@ -35,7 +35,6 @@
   <h2>Heart Growth</h2>
   <h3 style="text-align:center;font-size:25px;">Click the heart to show your love for this site!</h3>
   <img src="http://bestanimations.com/Signs&Shapes/Hearts/heart-animation3.gif" id="heart">
-  <img src="http://childdevelop.ca/2014-2015_Annual_Donor_Impact_Report/GFX/mouse.gif" style="top:50%;left:100%;position:relative;" id="scroller">
   <script type="text/javascript">
     var div = document.getElementById('text'),
       randomColor = function(e) {
@@ -82,20 +81,11 @@
       heart.style.width = newHeight + 'px';
       heart.style.height = newHeight + 'px';
     }
-    var scroller = document.getElementById('scroller');
-    function scroll(e) {
-      window.scrollBy({ 
-        top: 700, // could be negative value
-        left: 0, 
-        behavior: 'smooth' 
-    });
-    }
     window.onblur = function () { document.title = 'you left?'; }
     window.onfocus = function () { document.title = 'you came back! YAY!'; }
     div.addEventListener('mouseover', randomColor);
     div.addEventListener('click', copyColor);
     heart.addEventListener('click', changeHeart);
-    scroller.addEventListener('click', scroll);
   </script>
 </body>
 </html>
