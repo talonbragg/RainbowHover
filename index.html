@@ -25,7 +25,6 @@
   </style>
 </head>
 <body>
-  <img src="http://childdevelop.ca/2014-2015_Annual_Donor_Impact_Report/GFX/mouse.gif" style="top:50%;left:100%;" id="scroller">
   <h1>Rainbow Hover</h1>
   <h2><strong>Hover over the rainbow to get a random color!</strong></h2>
   <h3>Click on the Hex code to copy it.</h3>
@@ -36,6 +35,7 @@
   <h2>Heart Growth</h2>
   <h3 style="text-align:center;font-size:25px;">Click the heart to show your love for this site!</h3>
   <img src="http://bestanimations.com/Signs&Shapes/Hearts/heart-animation3.gif" id="heart">
+  <img src="http://childdevelop.ca/2014-2015_Annual_Donor_Impact_Report/GFX/mouse.gif" style="top:50%;left:100%;" id="scroller">
   <script type="text/javascript">
     var div = document.getElementById('text'),
       randomColor = function(e) {
@@ -82,7 +82,7 @@
       heart.style.width = newHeight + 'px';
       heart.style.height = newHeight + 'px';
     }
-    var scroller = documen.getElementById('scroller');
+    var scroller = document.getElementById('scroller');
     function scroll(e) {
       window.scrollBy({ 
         top: 700, // could be negative value
