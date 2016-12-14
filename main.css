@@ -18,7 +18,7 @@
     }
 a:hover {
   content: "email me";
-  background: url("http://www.solidbackgrounds.com/images/2560x1440/2560x1440-black-solid-color-background.jpg");
+  background-color: #5AD;
   -webkit-transition-duration: 0.8s;
     /* Safari */
     
