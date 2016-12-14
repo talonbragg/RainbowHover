@@ -4,7 +4,7 @@
 - *See funny codes!
 - *Email me any colors you would like me to send shades of to you!
 
-- **All of these things can be done on the **[Rainbowhover Website](http://rainbowhover.ml).**
+- **All of these things can be done on the [Rainbowhover Website](http://rainbowhover.ml).**
 
 #Also remember to star this repository!
 
