@@ -29,3 +29,7 @@ a:hover {
       color: white;
       padding: 30px;
 }
+.blackbar {
+      padding: 10px;
+      background-color: black;
+}
