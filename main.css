@@ -33,11 +33,19 @@ a:hover {
       padding: 15px;
       background-color: black;
 }
-.partner {
-     position: fixed;
+.bottom {
+       position: fixed;
      bottom: 0;
      right: 0;
 }
-.p2 {
+p a {
+color: white;
+text-decoration: none;
+}
+h6 {
+      color: #0575E6;
+}
+h4 {
+      font-size: 25px;
       color: #0575E6;
 }
