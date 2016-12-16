@@ -48,8 +48,17 @@
               document.getElementById('heartP').style.fontSize = "35px";
             }
     }
+    function sendMail() {
+    var link = "mailto:me@example.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape(document.getElementById('myText').value)
+    ;
+
+    window.location.href = link;
+}
     window.onblur = function () { document.title = 'Why Did You Leave?'; }
     window.onfocus = function () { document.title = 'You Came Back! YAY!'; }
     div.addEventListener('mouseover', randomColor);
     div.addEventListener('click', copyColor);
-    heart.addEventListener('click', changeHeart);
+    heart.addEventListener('click', changeHeart);
