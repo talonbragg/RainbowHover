@@ -63,6 +63,9 @@ input {
       border: 2px solid #5AD;
       color: white;
 }
+.btn:hover {
+      border: 2px solid purple;
+}
 .nh {
       margin-top: 0px;
 }
