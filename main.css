@@ -58,3 +58,7 @@ input {
       font-family: 'Quicksand';
       font-size: 25px;
 }
+.btn {
+      background: transparent;
+      border: 1px solid #5AD;
+}
