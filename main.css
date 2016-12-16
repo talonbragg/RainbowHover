@@ -52,3 +52,6 @@ h4 {
 a {
       font-size:25px;
 }
+input {
+      border-radius: 30px;
+}
