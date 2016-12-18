@@ -2,7 +2,7 @@ input {
   border: 3px solid #2dbdd1;
   font-family: 'Quicksand';
   background-color: Gray;
-  font-size: 25px;
+  font-size: 75px;
   color: white;
 }
 input:hover {
@@ -22,6 +22,7 @@ input:hover {
     background: url('http://wallpapercave.com/wp/2mBko4T.gif');
     color: white;
     text-align: center;
+    font-size: 75px;
   }
   .btn {
     border-radius: 7px;
