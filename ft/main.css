@@ -38,6 +38,6 @@ input:hover {
     /* Safari */
     transition-duration: 0.8s;
   }
-p {
+#message {
   font-size: 50px;
 }
