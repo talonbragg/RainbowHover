@@ -2,6 +2,8 @@ input {
   border: 3px solid #2dbdd1;
   font-family: 'Quicksand';
   background-color: Gray;
+  font-size: 25px;
+  color: white;
 }
 input:hover {
   border: 3px solid #2dbdd1;
