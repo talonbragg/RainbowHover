@@ -4,3 +4,6 @@ function GetValue()
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("message").innerHTML=random;
 }
+if (event.keyCode === 13) {
+    document.getElementById().innerHTML = "Don't Use Enter!";
+    }
