@@ -1,6 +1,7 @@
 input {
   border: 3px solid #2dbdd1;
   font-family: 'Quicksand';
+  background-color: Gray;
 }
 input:hover {
   border: 3px solid #2dbdd1;
@@ -17,6 +18,8 @@ input:hover {
     margin-right: 0px;
     margin-left: 0px;
     background: url('http://wallpapercave.com/wp/2mBko4T.gif');
+    color: white;
+    text-align: center;
   }
   .btn {
     border-radius: 7px;
